@@ -7,35 +7,26 @@
 
     <script>
       function setRandomLink() {
-     var randLink = document.getElementById('randLink');
+        var randLink = document.getElementById('randLink');
 
-     var theLinks = new Array(
-        'https://mau.se',
-        'https://lu.se',
-        'https://www.gatech.edu',
-     );
+        var theLinks = new Array(
+          'https://mau.se',
+          'https://lu.se',
+          'https://www.gatech.edu',
+         );
 
-     var arrSize = theLinks.length;
-     console.log(arrSize);
+         var arrSize = theLinks.length;
 
-     var randNo = Math.random();
-     randNo = Math.floor(randNo * arrSize);
-     console.log(randNo);
-     console.log(theLinks[randNo]);
-     randLink.href = theLinks[randNo];
-     console.log(randLink);
-  }
+         var randNo = Math.random();
+         randNo = Math.floor(randNo * arrSize);
+         randLink.href = theLinks[randNo];
+      }
     </script>
-
-
-
   </head>
-
 
   <body onload="setRandomLink()"">
 
     <p><a id="randLink" href="http://wwww.convirthub.com/">Click here for a random link</a></p>
-
 
   </body>
 </html>
