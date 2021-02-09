@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Random</title>
+
+
+    <script>
+      function setRandomLink() {
+     var randLink = document.getElementById('randLink');
+
+     var theLinks = new Array(
+        'https://mau.se',
+        'https://lu.se',
+        'https://www.gatech.edu',
+     );
+
+     var arrSize = theLinks.length;
+
+     var randNo = Math.random();
+     randNo = Math.floor(randNo * arrSize);
+
+     randLink.href = theLinks[randNo];
+  }
+    </script>
+
+
+
+  </head>
+
+
+  <body>
+
+    <p><a id="randLink" href="http://dougv.com/">Click here for a random link</a></p>
+
+
+  </body>
+</html>
