@@ -16,11 +16,14 @@
      );
 
      var arrSize = theLinks.length;
+     console.log(arrSize);
 
      var randNo = Math.random();
      randNo = Math.floor(randNo * arrSize);
-
+     console.log(randNo);
+     console.log(theLinks[randNo]);
      randLink.href = theLinks[randNo];
+     console.log(randLink);
   }
     </script>
 
@@ -29,9 +32,9 @@
   </head>
 
 
-  <body>
+  <body onload="setRandomLink()"">
 
-    <p><a id="randLink" href="http://dougv.com/">Click here for a random link</a></p>
+    <p><a id="randLink" href="http://wwww.convirthub.com/">Click here for a random link</a></p>
 
 
   </body>
