@@ -9,8 +9,26 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+  <script>
+      function setRandomLink() {
+        var randLink = document.getElementById('button5');
+
+        var theLinks = new Array(
+          'https://convirt.link/WyAwuQZ',
+          'https://convirt.link/WyAwuQZ',
+          'https://convirt.link/WyAwuQZ'
+         );
+
+         var arrSize = theLinks.length;
+
+         var randNo = Math.random();
+         randNo = Math.floor(randNo * arrSize);
+         randLink.href = theLinks[randNo];
+      }
+    </script>
 </head>
-<body>
+<body onload="setRandomLink()">
   <nav class="teal lighten-1" role="navigation">
              
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"> <img height="50px" width="150px" src="assets/Mau.png" /> </a>
@@ -30,25 +48,39 @@
       <div class="row center">
         <h5 class="header col s12 light">Virtual Reality as a medium for scholarly and social interaction</h5>
       </div>
-      <div class="row center ">
-        <div>In conjunction with the conference on the Digital Reading Condition at Aarhus University (February 11, 2021), we have created these VR rooms for attendees and guests <br><br></div>
-        <div class="col s12 m3">
-        <a href="https://hubs.convirthub.com/snNMSjz/conferenceroom" target="_blank" id="download-button" class="btn-large waves-effect waves-light teal">Room 1</a>
+      <div class="row ">
+        <div>In conjunction with the conference on the Digital Reading Condition at Aarhus University (February 11, 2021), we have created a suite of VR rooms for attendees and guests.<br><br></div>
+        <div class="center"><img height="256px" width="256px" src="assets/aarhus_website_polaroidTilted_01.png" /></div>
+          <br><br>
+        <div class="col s12 m1"></div>
+        <div class="col s12 m2">
+        <a href="https://hubs.convirthub.com/WyAwuQZ/" target="_blank" id="button1" class="btn-large waves-effect waves-light teal">Room 1</a>
         </div>
-        <div class="col s12 m3">
-        <a href="https://hubs.convirthub.com/snNMSjz/conferenceroom" target="_blank" id="download-button" class="btn-large waves-effect waves-light teal">Room 2</a>
+        <div class="col s12 m2">
+        <a href="https://hubs.convirthub.com/WyAwuQZ/" target="_blank" id="button2" class="btn-large waves-effect waves-light teal">Room 2</a>
         </div>
-         <div class="col s12 m3">
-        <a href="https://hubs.convirthub.com/snNMSjz/conferenceroom" target="_blank" id="download-button" class="btn-large waves-effect waves-light teal">Room 3</a>
+         <div class="col s12 m2">
+        <a href="https://hubs.convirthub.com/WyAwuQZ/" target="_blank" id="button3" class="btn-large waves-effect waves-light teal">Room 3</a>
         </div>       
-        <div class="col s12 m3">
-        <a href="https://hubs.convirthub.com/snNMSjz/conferenceroom" target="_blank" id="download-button" class="btn-large waves-effect waves-light teal">Room 4</a>
-        </div>     
+        <div class="col s12 m2">
+        <a href="https://hubs.convirthub.com/WyAwuQZ/" target="_blank" id="button4" class="btn-large waves-effect waves-light teal">Room 4</a>
+        </div>
+        <div class="col s12 m2">
+        <a href="" target="_blank" id="button5" class="btn-large waves-effect waves-light teal">Surprise</a>
+        </div>
         </div>
         <div class="row">
-         <div>All these rooms are identical, but occupancy is limited to 25. Join any one by clicking on the button. If that room is full, please try the next. <br><br.
+         <div><i>All these rooms are identical, but occupancy is limited to 25. Join any one by clicking on the button. If that room is full, please try the next. (Or choose the surprise, which could be any of the four.)</i><br><br.
          </div>   
         </div>
+        <div class="row ">
+        <div><br><h5>After your visit</h5></div>
+        <div>We are researching the potential role of Virtual Reality environments for scholarly exchange, and we are asking you to answer a few questions after your experience in our Hubs room. The survey is anonymous and the data that we collect will be used to inform our iterative design of the Hubs environment as well as for future research writing.
+         </div>   
+        <div class="center">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfptUih67Cpfrad2L_JcaJNarsuGmd9x4ezgoynmsWLREH9qA/viewform" target="_blank" class="btn-large waves-effect waves-light teal">Take the survey</a>
+        </div>
+        </div>   
     </div>
   </div>
 
